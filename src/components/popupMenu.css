@@ -1,0 +1,10 @@
+.popup-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--light-purple);
+    display: none;
+}
