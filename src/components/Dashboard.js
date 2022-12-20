@@ -33,7 +33,7 @@ function Dashboard() {
             <img src="https://images.unsplash.com/photo-1564460576398-ef55d99548b2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1287&amp;q=80" alt="Avatar" className="avatar-image"/>
             </div><p>Sandy - <span>Store B</span></p>
           </div>
-          <p className='text-message'>Hi, I have a bunch of empty bottly,
+          <p className='text-message'>Hi, I have a bunch of empty bottles,
             still waiting for the first delivery
             to run at full speed. I didn't have
             time to set up the store yet, but
