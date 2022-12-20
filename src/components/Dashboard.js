@@ -4,6 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './dashboard.css'
 import PopupMenu from './PopupMenu'
 import MyChart from './Chart'
+import Table from './Table'
 
 function Dashboard() {
   return (
