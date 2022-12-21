@@ -49,13 +49,13 @@ function Dashboard() {
 
           <div className='event-container'>
             <div className='event-header'>
-              <p>Sale</p> <p>Store A</p>
+              <p>Sale</p>
             
             </div>
             <div className='event-content'>
-              <p>Store A</p>
-              <p>amount: $ 100</p>
-              <p>items: 10</p>
+           
+              <p className='event-amount'>$ 100</p>
+              <p>10 items</p>
               <p>30 minutes ago</p>
             </div>
           </div>
