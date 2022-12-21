@@ -20,7 +20,7 @@ function Dashboard() {
             <MyChart />
           </div>
         </div>
-        <div className='center-panel'>center-panel</div>
+        <div className='center-panel'><Table/></div>
         <ul className='left-side-panel'>
           <li className='left-menu-option'>All</li>
           <li className='left-menu-option'>Credits</li>
