@@ -50,8 +50,7 @@ function Dashboard() {
           <div className='event-container'>
             <div className='event-header'>
               <p>Sale</p> <p>Store A</p>
-              
-
+            
             </div>
             <div className='event-content'>
               <p>Store A</p>
