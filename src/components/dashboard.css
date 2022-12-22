@@ -253,29 +253,97 @@
   width: 100%;
   height: 20%;
   display: flex;
-  background-color: var(--bg);
+  background-color: var(--bg-variant);
   z-index: 100;
   border-radius: 5px;
   border-bottom: 1px solid var(--dark-grey);
   align-items: center;
+  border:1px solid var(--bg);
 }
 
 .event-header {
   height: 90%;
   margin-left: 3px;
   width: 40%;
-  background-color: #fff;
+  background-color: rgb(189, 147, 147);
   font-size: 1.4rem;
-  color: rgb(64, 122, 245);
+  color: rgb(231, 233, 238);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
 
+.event-header-entry {
+ background-color: blueviolet;
+ animation: slide2 2s linear infinite;
 
 }
 
+.event-header-credit {
+  background-color: green;
+  animation: slide1 2s linear infinite;
+ }
+
+ @keyframes slide1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
 .event-content {
+  position: relative;
   font-size: 0.8rem;
   display: flex;
+  align-content: left;
+  height: 100%;
+  width: 60%;
+  align-items: center;
 }
+
+.event-amount {
+  font-size: 1.2rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  font-weight: 700;
+  align-items: center;
+  border-radius: 5px;
+  color: blueviolet;
+}
+
+.time-laps {
+  position: absolute;
+  bottom: -5%;
+  right: 15%;
+  font-size: 0.6rem;
+  color: red;
+}
+
+.event-quantity {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  font-size: 0.7rem;
+  display: flex;
+  border-radius: 5px;
+}
+
