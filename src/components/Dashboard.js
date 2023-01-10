@@ -14,7 +14,7 @@ function Dashboard() {
   return (
     <div className='container'>
      {popup?<PopupMenu state={popup} handlePopup={handlePopup}/>:''} 
-      <FontAwesomeIcon icon={faBars} className="menu-bars" onClick={()=>handlePopup()}/>
+     {!popup?<FontAwesomeIcon icon={faBars} className="menu-bars" onClick={()=>handlePopup()}/>:''}
       <div className='log-button'>Log In</div>
       <div className={popup?'blur-effect-inner-container':'inner-container'}>
         <div className='top-panel'>
