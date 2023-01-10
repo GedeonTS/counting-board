@@ -17,6 +17,7 @@ function PopupMenu(props) {
             <li><a>Store A</a></li>
           </ul>
       </div>
+      <div className='right-popup-field'></div>
           
       </div>
   )
