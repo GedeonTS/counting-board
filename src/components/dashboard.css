@@ -58,8 +58,13 @@
   box-shadow: 0 0 15px 0 var(--bg);
   border-radius: var(--border);
   filter: blur(5px);
+  animation: blur 2s 1;
 }
 
+@keyframes blur {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 .left-side-panel {
   background-color: var(--bg-variant);
   position: absolute;
