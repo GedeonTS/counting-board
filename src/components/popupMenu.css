@@ -20,8 +20,13 @@
     align-self: left;
     background:var(--bg-variant);
     height: 100%;
+    animation:popupInner 2s 1;
 }
 
+@keyframes popupInner {
+    0% {width:20%}
+    100% {width:30%}
+}
 .popup-menu {
     width: 100%;
     list-style: none;
@@ -42,5 +47,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 4px;
+    font-size: 1em;
     background-color: var(--bg);
 }
