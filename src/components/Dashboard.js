@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './dashboard.css'
@@ -7,12 +7,16 @@ import MyChart from './Chart'
 import Table from './Table'
 
 function Dashboard() {
+  const [popup,setPopup]=useState(true)
+  const handlePopup=()=>{
+    setPopup(!popup)
+  }
   return (
     <div className='container'>
-      <PopupMenu />
-      <FontAwesomeIcon icon={faBars} className="menu-bars" />
+     {popup?<PopupMenu state={popup} handlePopup={handlePopup}/>:''} 
+      <FontAwesomeIcon icon={faBars} className="menu-bars" onClick={()=>handlePopup()}/>
       <div className='log-button'>Log In</div>
-      <div className='inner-container'>
+      <div className={popup?'blur-effect-inner-container':'inner-container'}>
         <div className='top-panel'>
           <div className='top-left-panel'>
             <MyChart /></div>
