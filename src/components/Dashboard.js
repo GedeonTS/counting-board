@@ -7,7 +7,7 @@ import MyChart from './Chart'
 import Table from './Table'
 
 function Dashboard() {
-  const [popup,setPopup]=useState(true)
+  const [popup,setPopup]=useState(false)
   const handlePopup=()=>{
     setPopup(!popup)
   }
