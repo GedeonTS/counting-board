@@ -15,6 +15,7 @@ function EventVIsualiser() {
                     <p className='event-quantity'>Store A</p>
                     <p className='time-laps'>27 minutes ago</p>
                     <p className='event-agent'>Agent:</p>
+                </div>
             </div>
         </div>
     )
